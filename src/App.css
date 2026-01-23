@@ -37,6 +37,9 @@ nav {
 nav ul {
   display: flex;
   gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
@@ -167,6 +170,85 @@ em {
   font-size: 0.9rem;
   font-family: var(--font-code);
 }
+
+/* --- Form Styling --- */
+.code-form {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  padding: 2rem;
+  border-radius: 6px;
+  font-family: var(--font-code);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+label {
+  color: var(--accent-blue);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+input, select, textarea {
+  background-color: #252526;
+  border: 1px solid #3c3c3c;
+  color: #d4d4d4;
+  padding: 0.8rem;
+  font-family: var(--font-code);
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+}
+
+/* Checkbox & Radio styling */
+.radio-group, .checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.radio-group label, .checkbox-group label {
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+/* Alert Messages */
+.alert {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  font-family: var(--font-code);
+}
+.alert.success {
+  background-color: #1e3a1e;
+  border: 1px solid var(--accent-green);
+  color: var(--accent-green);
+}
+.alert.error {
+  background-color: #3a1e1e;
+  border: 1px solid #f44336;
+  color: #f44336;
+}
+
 
 /* Mobile Tweak */
 @media (max-width: 600px) {
