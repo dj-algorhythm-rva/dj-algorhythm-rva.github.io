@@ -1,42 +1,175 @@
-#root {
-  max-width: 1280px;
+/* src/App.css */
+
+/* --- Layout --- */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content, .home-container, .events-container {
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* --- Navbar --- */
+nav {
+  background-color: var(--surface-color);
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  color: var(--accent-blue);
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul {
+  display: flex;
+  gap: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+nav a {
+  color: var(--text-primary);
+  font-family: var(--font-code);
 }
 
-.card {
-  padding: 2em;
+nav a:hover {
+  color: var(--accent-pink);
 }
 
-.read-the-docs {
+/* --- Hero Section --- */
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: var(--accent-yellow);
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  color: var(--accent-green);
+  font-size: 1.2rem;
+}
+
+/* --- Sections --- */
+section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  color: var(--accent-pink);
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+strong {
+  color: var(--accent-blue);
+}
+
+em {
+  color: var(--accent-yellow);
+  font-style: normal;
+}
+
+/* --- Cards (Packages & Events) --- */
+.package-grid, .timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.package-card, .event-card {
+  background-color: var(--surface-color);
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.package-card:hover, .event-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-blue);
+}
+
+.package-card h3, .event-card h3 {
+  color: var(--accent-blue);
+  margin-top: 0;
+}
+
+/* --- Lists --- */
+.addons-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.addons-section li::before {
+  content: "=> ";
+  color: var(--accent-pink);
+  font-family: var(--font-code);
+  margin-right: 0.5rem;
+}
+
+/* --- Contact Button --- */
+.contact-section {
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--accent-blue);
+  color: #1e1e1e; /* Dark text on light button */
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-family: var(--font-code);
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background-color: var(--accent-pink);
+  color: #fff;
+}
+
+/* --- Past Events Specifics --- */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event-card {
+  border-left: 4px solid var(--accent-green);
+}
+
+.event-date {
+  color: var(--accent-green);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-location {
   color: #888;
+  font-size: 0.9rem;
+  font-family: var(--font-code);
+}
+
+/* Mobile Tweak */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2rem; }
+  nav { flex-direction: column; gap: 1rem; }
 }
