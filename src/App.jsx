@@ -1,9 +1,8 @@
-import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import {Navbar} from './components/Navbar';
-import {Home} from './pages/Home';
-import {PastEvents} from './pages/PastEvents';
-import './App.css'; // We will edit this in styling later
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { Navbar } from "./components/Navbar";
+import { Home } from "./pages/Home";
+import { PastEvents } from "./pages/PastEvents";
+import "./App.css"; // We will edit this in styling later
 
 function App() {
   return (
@@ -19,4 +18,4 @@ function App() {
   );
 }
 
-export {App };
+export { App };
