@@ -94,7 +94,7 @@ function Home() {
           Weddings and ceremonies, homecomings, proms, school dances, holiday
           parties, graduations, engagement parties, birthdays, anniversaries,
           corporate events, halloween parties, summer parties, family reunions,
-          and class reunions.
+          class reunions, and more!
         </p>
       </section>
 
@@ -102,7 +102,7 @@ function Home() {
       <section className="contact-section">
         <h2>Let's chat today and find your soundtrack!</h2>
         <p>We would love to be a part of your celebration.</p>
-        <a href="mailto:your-email@example.com" className="cta-button">
+        <a href="mailto:dj.algorhythm.rva@gmail.com" className="cta-button">
           Contact Us Today
         </a>
       </section>
