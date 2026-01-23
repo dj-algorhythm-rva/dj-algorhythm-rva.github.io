@@ -1,4 +1,4 @@
- function Home() {
+function Home() {
   return (
     <div className="home-container">
       {/* Hero Section */}
@@ -13,20 +13,22 @@
       <section className="bio-section">
         <h2>Hello and welcome!</h2>
         <p>
-          My name is Kyle, aka <strong>{`{ dj_algorhythm }`}</strong>.
-          As far back as I can remember my life has always had a soundtrack. 
-          I’ve always loved music and been deeply impacted by the right song at the right time.
+          My name is Kyle, aka <strong>{`{ dj_algorhythm }`}</strong>. As far
+          back as I can remember my life has always had a soundtrack. I've
+          always loved music and been deeply impacted by the right song at the
+          right time.
         </p>
         <p>
-          There’s something profound about music and when it’s missing (or just isn’t right) 
-          the atmosphere of the party is diminished. But when the music is rightly curated, 
-          and you can <em>feel</em> the beat, you can’t help but dance. 
+          There's something profound about music and when it's missing (or just
+          isn't right) the atmosphere of the party is diminished. But when the
+          music is rightly curated, and you can <em>feel</em> the beat, you
+          can't help but dance.
         </p>
         <p>
-          My desire is to understand <strong>your</strong> vision for <strong>your</strong> party 
-          and to help you find <strong>your</strong> soundtrack for your big event! I’ve been doing this 
-          since 2001 for a wide range of events and a variety of people. Don’t risk hiring a DJ or MC 
-          who is just going to “play music”. Instead, hire a DJ who is going to help you find your perfect soundtrack.
+          My desire is to understand <strong>your</strong> vision for{" "}
+          <strong>your</strong> party and to help you find <strong>your</strong>{" "}
+          soundtrack for your big event! I've been doing this since 2001 for a
+          wide range of events and a variety of people. Let's find your perfect soundtrack.
         </p>
       </section>
 
@@ -39,28 +41,31 @@
           <article className="package-card">
             <h3>DJ Only</h3>
             <p>
-              This is the perfect option if you’re just looking for someone to bring a 
-              professional quality sound system and play your personalized playlist.
+              This is the perfect option if you're just looking for someone to
+              bring a professional quality sound system and play your
+              personalized playlist.
             </p>
           </article>
 
           <article className="package-card">
             <h3>DJ + MC</h3>
             <p>
-              This package is for those who are looking for a little more than a DJ. 
-              With the MC add-on, we provide you with announcements throughout the duration 
-              of your event and we work closely with your event coordinator to ensure 
-              everything is on cue and flowing smoothly. This package also includes 
-              microphones for you and your guests for any planned speeches.
+              This package is for those who are looking for a little more than a
+              DJ. With the MC add-on, we provide you with announcements
+              throughout the duration of your event and we work closely with
+              your event coordinator to ensure everything is on cue and flowing
+              smoothly. This package also includes microphones for you and your
+              guests for any planned speeches.
             </p>
           </article>
 
           <article className="package-card">
             <h3>Live Sound Setup & Management</h3>
             <p>
-              This package is for those who are looking for sound management throughout an event 
-              (typically a wedding ceremony) including: microphones for musicians, singers, 
-              the officiant, and for readings or prayers.
+              This package is for those who are looking for sound management
+              throughout an event (typically a wedding ceremony) including:
+              microphones for musicians, singers, the officiant, and for
+              readings or prayers.
             </p>
           </article>
         </div>
@@ -82,12 +87,14 @@
       <section className="event-types-section">
         <h2>Specializing In</h2>
         <p>
-          We are pleased to provide quality DJ entertainment for various types of events, specializing in:
+          We are pleased to provide quality DJ entertainment for various types
+          of events, specializing in:
         </p>
         <p className="event-list">
-          Weddings and ceremonies, homecomings, proms, school dances, holiday parties, 
-          graduations, engagement parties, birthdays, anniversaries, corporate events, 
-          halloween parties, summer parties, family reunions, and class reunions.
+          Weddings and ceremonies, homecomings, proms, school dances, holiday
+          parties, graduations, engagement parties, birthdays, anniversaries,
+          corporate events, halloween parties, summer parties, family reunions,
+          and class reunions.
         </p>
       </section>
 
