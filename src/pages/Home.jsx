@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <div className="home-container">
@@ -102,9 +104,9 @@ function Home() {
       <section className="contact-section">
         <h2>Let's chat today and find your soundtrack!</h2>
         <p>We would love to be a part of your celebration.</p>
-        <a href="mailto:dj.algorhythm.rva@gmail.com" className="cta-button">
-          Contact Us Today
-        </a>
+        <button className="cta-button">
+          <Link to="/inquiry">Contact Us Today</Link>
+        </button>
       </section>
     </div>
   );
