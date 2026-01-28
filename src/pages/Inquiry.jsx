@@ -40,7 +40,6 @@ function Inquiry() {
 
       if (response.ok) {
         setStatus("success");
-        e.target.reset();
       } else {
         setStatus("error");
       }
@@ -49,6 +48,41 @@ function Inquiry() {
       setStatus("error");
     }
   };
+
+  // 1. Success View Component
+  if (status === "success") {
+    return (
+      <div
+        className="page-content"
+        style={{ textAlign: "center", marginTop: "4rem" }}
+      >
+        <header className="hero">
+          <h1 style={{ color: "var(--accent-green)", fontSize: "3rem" }}>
+            200 OK
+          </h1>
+        </header>
+        <div
+          className="alert success"
+          style={{ maxWidth: "600px", margin: "0 auto" }}
+        >
+          <p style={{ fontSize: "1.2rem", marginBottom: "1rem" }}>
+            <code>// Inquiry transmitted successfully.</code>
+          </p>
+          <p>
+            Thank you for reaching out! I have received your information and
+            will contact you shortly.
+          </p>
+        </div>
+        <button
+          onClick={() => window.location.reload()}
+          className="cta-button"
+          style={{ marginTop: "2rem" }}
+        >
+          Send Another Inquiry
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div className="page-content">
@@ -65,7 +99,11 @@ function Inquiry() {
         )}
         {status === "error" && (
           <div className="alert error">
-            ERROR: Transmission failed. Please email me directly.
+            ERROR: Transmission failed. Please email me directly:{" "}
+            <a href="mailto:DJ.Algorhythm.RVA@gmail.com">
+              DJ.Algorhythm.RVA@gmail.com
+            </a>
+            .
           </div>
         )}
 
@@ -200,7 +238,11 @@ function Inquiry() {
               Bubble Machine
             </label>
             <label>
-              <input type="checkbox" name="addons" value="Projector and Screen" />{" "}
+              <input
+                type="checkbox"
+                name="addons"
+                value="Projector and Screen"
+              />{" "}
               Projector & Screen
             </label>
           </div>
