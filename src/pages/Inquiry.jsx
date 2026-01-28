@@ -50,7 +50,7 @@ function Inquiry() {
   };
 
   // 1. Success View Component
-  if (status !== "success") {
+  if (status === "success") {
     return <Success />;
   }
 
