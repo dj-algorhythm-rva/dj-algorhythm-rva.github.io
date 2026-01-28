@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Success } from "./Success";
 function Inquiry() {
   const FORMSUBMIT_ENDPOINT =
     "https://formsubmit.co/d4ee6fe82b93f17cb483d1d4978dd27e";
@@ -50,38 +50,8 @@ function Inquiry() {
   };
 
   // 1. Success View Component
-  if (status === "success") {
-    return (
-      <div
-        className="page-content"
-        style={{ textAlign: "center", marginTop: "4rem" }}
-      >
-        <header className="hero">
-          <h1 style={{ color: "var(--accent-green)", fontSize: "3rem" }}>
-            200 OK
-          </h1>
-        </header>
-        <div
-          className="alert success"
-          style={{ maxWidth: "600px", margin: "0 auto" }}
-        >
-          <p style={{ fontSize: "1.2rem", marginBottom: "1rem" }}>
-            <code>// Inquiry transmitted successfully.</code>
-          </p>
-          <p>
-            Thank you for reaching out! I have received your information and
-            will contact you shortly.
-          </p>
-        </div>
-        <button
-          onClick={() => window.location.reload()}
-          className="cta-button"
-          style={{ marginTop: "2rem" }}
-        >
-          Send Another Inquiry
-        </button>
-      </div>
-    );
+  if (status !== "success") {
+    return <Success />;
   }
 
   return (
