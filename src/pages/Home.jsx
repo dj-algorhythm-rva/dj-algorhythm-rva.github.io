@@ -28,7 +28,8 @@ function Home() {
           My desire is to understand <strong>your</strong> vision for{" "}
           <strong>your</strong> party and to help you find <strong>your</strong>{" "}
           soundtrack for your big event! I've been doing this since 2001 for a
-          wide range of events and a variety of people. Let's find your perfect soundtrack.
+          wide range of events and a variety of people. Let's find your perfect
+          soundtrack.
         </p>
       </section>
 
@@ -78,7 +79,6 @@ function Home() {
         <ul>
           <li>Projector + screen for slideshows or videos</li>
           <li>Dance floor lighting</li>
-          <li>Fog machine</li>
           <li>Bubble machine</li>
         </ul>
       </section>
