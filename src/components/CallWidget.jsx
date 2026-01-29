@@ -1,7 +1,7 @@
 import React from "react";
 
 export function CallWidget() {
-  const PHONE_NUMBER = "(804) 592-1508";
+  const PHONE_NUMBER = "(804) 592-1108";
   const CLEAN_NUMBER = PHONE_NUMBER.replace(/\D/g, "");
 
   return (
