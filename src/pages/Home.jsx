@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { CallWidget } from "../components/CallWidget";
 
 function Home() {
   const YOUTUBE_VIDEO_ID = "RymnBf-X8q8";
@@ -170,6 +171,8 @@ function Home() {
         <button className="cta-button">
           <Link to="/inquiry">Contact Us Today</Link>
         </button>
+
+        <CallWidget />
       </section>
     </div>
   );

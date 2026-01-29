@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Success } from "./Success";
+import { CallWidget } from "../components/CallWidget";
+
 function Inquiry() {
   const FORMSUBMIT_ENDPOINT =
     "https://formsubmit.co/d4ee6fe82b93f17cb483d1d4978dd27e";
@@ -77,6 +79,7 @@ function Inquiry() {
           </div>
         )}
 
+        <CallWidget />
         <form onSubmit={handleSubmit} className="code-form">
           {/* Contact Info */}
           <h3>1. Contact Info</h3>
