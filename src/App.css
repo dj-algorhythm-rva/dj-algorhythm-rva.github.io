@@ -280,3 +280,17 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     gap: 1rem;
   }
 }
+
+/* --- Mobile Responsiveness for Form --- */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* Ensure the inputs inside the row take full width */
+  .form-row .form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
