@@ -3,7 +3,8 @@ import { Navbar } from "./components/Navbar";
 import { Home } from "./pages/Home";
 import { PastEvents } from "./pages/PastEvents";
 import { Inquiry } from "./pages/Inquiry";
-import { Success } from './pages/Success';
+import { Success } from "./pages/Success";
+import { Footer } from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/inquiry" element={<Inquiry />} />
           <Route path="/success" element={<Success />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
