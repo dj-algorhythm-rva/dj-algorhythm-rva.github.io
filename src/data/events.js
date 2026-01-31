@@ -94,7 +94,7 @@ export const events = [
     id: 20170805,
     title: "Cassidy Shoun & Randall Mailand Wedding",
     date: "August 5, 2017",
-    location: "The Boathouse at Sunday Park",
+    location: "The Boathouse at Sunday Park | Midlothian, VA",
     description: "Wedding Celebration.",
   },
   {
