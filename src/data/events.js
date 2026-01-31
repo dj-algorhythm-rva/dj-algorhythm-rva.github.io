@@ -520,7 +520,7 @@ export const events = [
   {
     id: 20241005,
     title: "ASK Fall Family Festival",
-    date: "October 5, 2025",
+    date: "October 5, 2024",
     location: "Glen Allen High School | Glen Allen, VA",
     description: "A wonderful day at Glen Allen High School.",
   },
