@@ -1,8 +1,8 @@
 function HeroSection() {
   return (
-    <header className="hero">
+    <header className='hero'>
       <h1>{`{ dj_algorhythm }`}</h1>
-      <p className="tagline">
+      <p className='tagline'>
         <code>// It's your party; I'm just the DJ.</code>
       </p>
     </header>

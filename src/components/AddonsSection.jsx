@@ -1,6 +1,6 @@
 function AddonsSection() {
   return (
-    <section className="addons-section">
+    <section className='addons-section'>
       <h2>Add-ons</h2>
       <p>We provide a variety of add-ons including:</p>
       <ul>

@@ -130,7 +130,7 @@ em {
 }
 
 .addons-section li::before {
-  content: "=> ";
+  content: '=> ';
   color: var(--accent-pink);
   font-family: var(--font-code);
   margin-right: 0.5rem;
@@ -265,8 +265,8 @@ textarea:focus {
 }
 
 /* Fix for Date/Time icons in Dark Mode */
-input[type="date"]::-webkit-calendar-picker-indicator,
-input[type="time"]::-webkit-calendar-picker-indicator {
+input[type='date']::-webkit-calendar-picker-indicator,
+input[type='time']::-webkit-calendar-picker-indicator {
   filter: invert(1);
   cursor: pointer;
 }

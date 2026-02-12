@@ -1,11 +1,11 @@
 function PackagesSection() {
   return (
-    <section className="services-section">
+    <section className='services-section'>
       <h2>Packages</h2>
       <p>For each type of event we have various packages.</p>
 
-      <div className="package-grid">
-        <article className="package-card">
+      <div className='package-grid'>
+        <article className='package-card'>
           <h3>DJ Only</h3>
           <p>
             This is the perfect option if you're just looking for someone to
@@ -14,7 +14,7 @@ function PackagesSection() {
           </p>
         </article>
 
-        <article className="package-card">
+        <article className='package-card'>
           <h3>DJ + MC</h3>
           <p>
             This package is for those who are looking for a little more than a
@@ -26,7 +26,7 @@ function PackagesSection() {
           </p>
         </article>
 
-        <article className="package-card">
+        <article className='package-card'>
           <h3>Live Sound Setup & Management</h3>
           <p>
             This package is for those who are looking for sound management

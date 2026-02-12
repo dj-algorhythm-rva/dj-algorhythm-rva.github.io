@@ -1,12 +1,12 @@
 /* src/index.css */
 :root {
-  --bg-color: #1e1e1e;       /* VS Code Dark Background */
-  --surface-color: #252526;  /* Sidebar/Card Background */
-  --text-primary: #d4d4d4;   /* Light Grey Text */
-  --accent-blue: #569cd6;    /* Variables/Keywords */
-  --accent-green: #6a9955;   /* Comments/Strings */
-  --accent-pink: #c586c0;    /* Control Flow */
-  --accent-yellow: #dcdcaa;  /* Functions */
+  --bg-color: #1e1e1e; /* VS Code Dark Background */
+  --surface-color: #252526; /* Sidebar/Card Background */
+  --text-primary: #d4d4d4; /* Light Grey Text */
+  --accent-blue: #569cd6; /* Variables/Keywords */
+  --accent-green: #6a9955; /* Comments/Strings */
+  --accent-pink: #c586c0; /* Control Flow */
+  --accent-yellow: #dcdcaa; /* Functions */
   --font-code: 'Fira Code', monospace;
   --font-body: 'Inter', sans-serif;
 }
@@ -26,7 +26,12 @@ a {
   transition: color 0.2s;
 }
 
-h1, h2, h3, .logo, .tagline, .event-date {
+h1,
+h2,
+h3,
+.logo,
+.tagline,
+.event-date {
   font-family: var(--font-code);
 }
 
