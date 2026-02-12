@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   return (
     <nav>
-      <div className='logo'>{`{ dj_algorhythm }`}</div>
+      <Link to="/" className='logo'>{`{ dj_algorhythm }`}</Link>
       <ul>
         <li>
           <Link to='/'>Home</Link>
